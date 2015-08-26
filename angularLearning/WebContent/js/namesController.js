@@ -21,6 +21,7 @@ angular.module('myApp', []).controller(
 			$scope.alert = function() {
 				this.alert("hello");
 				count++;
+				//++count would not work
 				alert(this.count);
 			}
 		});
