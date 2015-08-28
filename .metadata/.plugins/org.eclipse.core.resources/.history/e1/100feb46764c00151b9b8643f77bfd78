@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+<title>My Note</title>
+</head>
+<body>
+<div ng-app="noteApp" ng-controller="noteCtrl">
+{{ firstName + " " + lastName }}
+</div>
+
+<script src="js/noteApp.js"></script>
+<script src="js/noteCtrl.js"></script>
+</body>
+</html>

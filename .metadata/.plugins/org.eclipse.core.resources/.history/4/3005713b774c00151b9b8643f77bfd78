@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+<title>My Note</title>
+</head>
+<body>
+<div ng-app="noteApp" ng-controller="noteCtrl">
+
+<textarea rows="4" cols="50">
+At w3schools.com you will learn how to make a website. We offer free tutorials in all web development technologies. 
+</textarea>
+
+<br>
+<button type="button">Save</button> <button type="button">Clear</button>
+
+{{ firstName + " " + lastName }} {{wordCount}}
+</div>
+
+<script src="noteApp/noteApp.js"></script>
+<script src="noteApp/noteCtrl.js"></script>
+</body>
+</html>

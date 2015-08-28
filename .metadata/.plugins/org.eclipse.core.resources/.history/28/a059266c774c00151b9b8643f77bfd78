@@ -1,0 +1,5 @@
+app.controller("noteCtrl", function($scope) {
+    $scope.firstName	= "John";
+    $scope.lastName= "Doe";
+    $scope.note= "Doe";
+});

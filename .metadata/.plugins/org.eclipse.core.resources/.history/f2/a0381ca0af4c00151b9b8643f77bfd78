@@ -1,0 +1,12 @@
+app.controller("noteCtrl", function() {
+    this.note= "";
+    this.onSave = function($scope){
+    	alert("Note Saved this");
+    };
+    this.onClear=function(){
+    	this.note= "";
+    };
+    $scope.$watch(noteCtrl.note, function(){
+    	this.wordCount = 100 - this.note.length;
+    })
+});

@@ -1,0 +1,11 @@
+app.controller("noteCtrl", function($scope) {
+    $scope.firstName	= "John";
+    $scope.lastName= "Doe";
+    $scope.note= "Doe";
+    $scope.onSave = function(){
+    	alert("Note Saved");
+    };
+    $scope.onClear=function(){
+    	$scope.note= "";
+    };
+});

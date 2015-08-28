@@ -1,0 +1,14 @@
+app.controller("noteCtrl", function($scope) {
+    $scope.firstName	= "";
+    $scope.lastName= "";
+    $scope.note= "Doe";
+    $scope.onSave = function(){
+    	alert("Note Saved");
+    };
+    $scope.onClear=function(){
+    	$scope.note= "";
+    };
+    $scope.$watch("note", function(){
+    	$scope.wordCount = 100 - $scope.note.length;
+    })
+});
